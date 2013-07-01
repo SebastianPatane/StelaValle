@@ -1,6 +1,3 @@
-<?php
-$flag = "shop"
-?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -25,7 +22,7 @@ $flag = "shop"
     <?php require_once('inc/header.php'); ?>
 	
     
-    <div class="row collapse our-story spacing-fix">
+    <div class="row collapse our-story">
           <div class="large-12 columns">
               <h1>SHOP  Necklaces</h1>
           </div>
@@ -43,16 +40,16 @@ $flag = "shop"
                     
                     <div class="small-12 large-4 columns">
                         <ul id="images-shop-detail">
-                            <li><a href="http://placehold.it/360x360"><img src="http://placehold.it/110x110"></a></li>
-							<li><a href="http://placehold.it/360x360"><img src="http://placehold.it/110x110"></a></li>
-                            <li><a href="http://placehold.it/360x360"><img src="http://placehold.it/110x110"></a></li>
+                            <li><a href="http://placehold.it/370x370"><img src="http://placehold.it/110x110"></a></li>
+							<li><a href="http://placehold.it/370x370"><img src="http://placehold.it/110x110"></a></li>
+                            <li><a href="http://placehold.it/370x370"><img src="http://placehold.it/110x110"></a></li>
                         </ul>
                     </div>
                     
                 </div>
         </div>
         
-        <div class="small-12 large-6 columns shop-detail-padding">
+        <div class="small-12 large-6 columns">
                 
                 <div class="row collapse row-price show-for-small">
                 	<div class="small-8 large-8 columns">CONQUER</div>
@@ -77,8 +74,8 @@ $flag = "shop"
                 </div>
                 
                 <form class="custom">
-                      <div class="row collapse">
-                      	<div class="small-12 large-8 columns shop-forms-spacing">
+                      <div class="row">
+                      	<div class="small-12 large-8 columns">
                           <select id="customDropdown1" class="medium choose">
                             <option selected>CHOOSE FINISH</option>
                             <option>This is another option</option>
@@ -89,7 +86,7 @@ $flag = "shop"
                       	
                         <div class="small-12 large-4 columns">
                           <select id="customDropdown1" class="medium quantity">
-                            <option selected>Qty.</option>
+                            <option selected>QUANTITY</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -99,7 +96,7 @@ $flag = "shop"
                       
                       <a href="#" class="large button expand add-cart">ADD TO CART</a>                    
                       
-                      <div class="row collapse show-for-dektop-only">
+                      <div class="row collapse show-for-large-up">
                       	  
                           <div class="large-12 columns">
                           		<p><strong><em>Review it, Love it, Share it!</em></strong></p>

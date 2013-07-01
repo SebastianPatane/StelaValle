@@ -1,6 +1,3 @@
-<?php
-$flag = "stockist"
-?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -29,8 +26,8 @@ $flag = "stockist"
           </div>
     </div>
     
-	<div class="row stockist spacing-fix">
-    	<div class="small-12 large-8 large-offset-1 columns">
+	<div class="row stockist">
+    	<div class="small-12 large-9 columns">
         
             <h1>USA</h1>
             <article class="stockist-columns">
@@ -70,7 +67,7 @@ $flag = "stockist"
                 ROCKAWAY NJ 07866<br>
                 862 209 4463</p>
                 
-                <p class="parragraph-fix"><strong>ATTACHMENTS</strong><br>
+                <p><strong>ATTACHMENTS</strong><br>
                 138 MAIN STREET<br>
                 FLEMINGTON NJ 08822<br>
                 908 782 3155</p>
@@ -93,7 +90,8 @@ $flag = "stockist"
                 
                 <p><strong>SAGE</strong><br>
                 48 MAIN STREET<br>
-                FLEMINGTON NJ 08822<br>908 968 3391</p>
+                FLEMINGTON NJ 08822<br>
+                908 968 3391</p>
                 
                 <p>SUITE 201<br>
                 11 S WALNUT STREET<br>
@@ -106,9 +104,8 @@ $flag = "stockist"
                 NEW YORK NY 10022<br>
                 212 705 2000<br>
                 *TRUNK SHOWS</p>
-               
                 
-                <p class="parragraph-fix"><strong>BLOOMINGDALES GARDEN CITY</strong><br>
+                <p><strong>BLOOMINGDALES GARDEN CITY</strong><br>
                 ROOSEVELT FIELD MALL<br>
                 630 OLD COUNTRY ROAD<br>
                 GARDEN CITY NY 11530<br>

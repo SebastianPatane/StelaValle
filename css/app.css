@@ -1,8 +1,6 @@
 body {
 	font-family: 'Lato', sans-serif;
 	text-rendering: optimizeLegibility;
-	color:#000000;
-	padding:0px 0px 30px 0px;
 }
 
 a {
@@ -26,7 +24,6 @@ a {
 	line-height:40px;
 	height:40px;
 	border-bottom:1px solid #000;
-	font-size:12.5px;
 }
 
 a.shopping-cart {
@@ -62,36 +59,25 @@ a.shopping-cart {
 	border:1px solid #000000;
 	height:1.9em;
 	color:#000;
-	width:105px;
-	font-style:italic;
-	float:left;
 }
 
 .social-footer .button {
+	background-color:#000;
 	border-color:#333;
 	height:1.9em;
-	background:url(../img/button-go.gif) center center no-repeat #000;
-	width:29px;
-	height:27px;
-	float:left;
 }
 
 ul.social-links {
 	margin:0px;
 	padding:0px;
 	list-style-type:none;
-	float:right;
-}
-
-.footer-newsletter {
-	float:left;
 }
 
 ul.social-links li {
 	width:27px;
 	height:27px;
 	float:left;
-	margin:0px 1px 0px 0px;
+	margin:0px 3px 0px 0px;
 	text-indent:-5000px;
 }
 
@@ -198,7 +184,6 @@ ul.social-links li a.vimeo:hover {
 	font-family: 'Lato', sans-serif;
 	font-size:16px;
 	color:#000;
-	clear:both;
 }
 
 .home-modal .featured-descripcion span {
@@ -336,14 +321,6 @@ ul.lookbook-responsive li {
 }
 
 /*********** SHOP ****************/
-.shop h1 {
-	font-family: 'GFS Didot', serif;
-	font-size:18px;
-	font-weight:700;
-	color:#000;
-	margin:30px 0px 10px 0px;
-}
-
 .item { width: 120px; margin-bottom:30px; cursor:pointer; font-size:12px; font-family: 'Lato', sans-serif; line-height:2em; }
 
 .item img.grayscale {
@@ -510,6 +487,7 @@ form.custom .custom.dropdown.open.medium ul {
 .stockist {
 	padding-top:20px;
 	background:url(../img/bg-stockist.gif) no-repeat top center;
+	background-size:100%;
 }
 
 .stockist h1 {
@@ -540,7 +518,7 @@ form.custom .custom.dropdown.open.medium ul {
 
 /* Styles for screens that are atleast 768px; */
 @media only screen and (min-width: 768px) {
-
+	
 .free-shipping {
 	border-bottom:none;
 	border-right:1px solid #000;
@@ -620,27 +598,12 @@ ul#images-shop-detail.exposureThumbs li {
 
 @media only screen and (min-width: 64em) {
 
-.spacing-fix { margin-top:150px; }
-
-.container { 
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  height: 0;
-  z-index:100;
-
-}
-
-.container > .position-fixed {
-  display: inline-block;
-  text-align: left;
-}
-
 .top-bar {
  background:none;
- height:180px; }
+ height:180px;
+ /*z-index:100; --> Uncomment this line to enable top bar position fixed
+ position:fixed;
+	z-index:100;*/ }
 
 .top-bar.expanded {
  background:none; }
@@ -674,14 +637,6 @@ ul#images-shop-detail.exposureThumbs li {
 	  background: #000000;
 	  color:#ffffff;
 	  font-style:italic;
-	  opacity:1.0;
-}
-
-.top-bar-section li a.current-section {
-	  background: #000000;
-	  color:#ffffff;
-	  font-style:italic;
-	  opacity:1.0;
 }
 
 .top-bar-section ul li > a {
@@ -730,23 +685,21 @@ ul#images-shop-detail.exposureThumbs li {
 		
 		.top-bar-section .dropdown li a:hover {
         color: #fff;
-        background: #000;
-		}
+        background: #000;}
 		
 		.top-bar-section .divider, .top-bar-section [role="separator"] { display:none; }
 		
 .top-bar-section li.desktop-logo a {
 	border:none;
-	opacity:1.0;
 }
 .slideshow-wrapper {
-	margin-top:40px;
+	/*margin-top:-120px;*/
 }
 	
 .social-footer {
 	border:none;
 }
-
+	
 .header-line-div {
 	width:5px;
 	height:40px;
@@ -756,7 +709,7 @@ ul#images-shop-detail.exposureThumbs li {
 
 a.shopping-cart.view-cart {
 	border-left:none;
-	width:130px;
+	width:140px;
 	padding-right:25px;
 }
 
@@ -779,10 +732,6 @@ a.shopping-cart.view-cart {
 
 .orbit-bullets li {
 	cursor:pointer;	
-}
-
-.orbit-timer {
-	visibility:hidden;
 }
 
 
@@ -810,17 +759,16 @@ a.shopping-cart.view-cart {
 }
 
 .our-story h3 {
-	font-size:50px;
-	font-weight:100;
+	font-size:40px;
+	font-weight:300;
 	margin-bottom:70px;
-	color:#000;
 }
 
 /********** OUR COLLECTIONS *********/
 
 h1.our-collections-h1 {
 	font-family: 'GFS Didot', serif;
-	font-size:60px;
+	font-size:65px;
 	color:#000;
 	font-weight:300;
 	border-bottom:1px solid #000;
@@ -1000,10 +948,6 @@ ul.exposureThumbs li {
 	padding:80px 0px 50px 0px;
 }
 
-.shop-detail-padding {
-	padding-left:70px;
-}
-
 #products { padding-top:40px;}
 
 .product-description h1, .product-description h2 {
@@ -1013,7 +957,7 @@ ul.exposureThumbs li {
 	font-family: 'GFS Didot', serif;
 	font-size:22px;
 	color:#000;
-	font-weight:700;
+	font-weight:400;
 	margin:0px;
 	padding:0px;
 	line-height:normal;
@@ -1032,11 +976,7 @@ ul.exposureThumbs li {
 	margin:20px 0px 20px 0px;}
 	
 .shop-detail form.custom {
-	width:53%;
-}
-
-.shop-forms-spacing {
-	padding-right:10px !important;
+	width:50%;
 }
 
 a.read-reviews {
@@ -1061,7 +1001,7 @@ a.read-reviews:hover {
 
 /******** HASH TAG *****************/
 .hashtag {
-	padding:30px 0px 0px 40px;
+	padding:50px 0px 0px 100px;
 }
 
 /******** BLOG *****************/
@@ -1089,10 +1029,6 @@ a.read-reviews:hover {
   column-count: 3;
   column-gap: 20px;
  }
- 
-.parragraph-fix {
-	margin-top:100px;
-}
  
 /****** Home Popup *************/
 .home-modal {
@@ -1133,17 +1069,6 @@ a.read-reviews:hover {
 
 }
 
-@media only screen and (min-width: 82.5em) {
-	
-.footer-newsletter {
-	margin-left:960px;
-}
-
-.social-footer input[type="text"] {
-	width:165px;
-}
-}
-
 /* Styles for screens that are betwen 1024px and 1920px */
 @media only screen 
 and (min-width : 1024px) 
@@ -1154,15 +1079,6 @@ and (max-width : 1920px) {
 
 .show-for-mobile {
 	display:none;	
-}
-
-}
-
-@media only screen 
-and (min-width : 1024px) and (max-width: 82em) {
-
-.top-bar-section li a:not(.button) {
-	  width:110px;
 }
 
 }

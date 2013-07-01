@@ -1,6 +1,3 @@
-<?php
-$flag = "create"
-?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -23,7 +20,7 @@ $flag = "create"
 	
     <?php require_once('inc/header.php'); ?>
     
-	<div class="row spacing-fix">
+	<div class="row">
     	<div class="large-12 columns text-center">
         
             	<h1 class="coming-soon"><em>COMING SOON</em></h1>
