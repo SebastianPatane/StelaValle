@@ -1,3 +1,6 @@
+<?php
+$flag = "collections"
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -23,20 +26,20 @@
     <?php require_once('inc/header.php'); ?>
 	
     
-    <div class="row collapse our-story">
+    <div class="row collapse our-story spacing-fix">
           <div class="large-12 columns">
               <h1>COLLECTIONS  Celebrate Seaside</h1>
           </div>
     </div>
     
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="small-12 large-11 large-centered columns">
                 
                 <ul id="Collections"> 
-                    <li><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</li>
-                    <li><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</li>
-                    <li><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</li>
-                    <li><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</li>
+                    <li><a href="shop-detail.php"><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</a></li>
+                    <li><a href="shop-detail.php"><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</a></li>
+                    <li><a href="shop-detail.php"><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</a></li>
+                    <li><a href="shop-detail.php"><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</a></li>
                 </ul>
                 
                 
@@ -71,7 +74,7 @@
         			
             <div class="row collapse look-book">
                   <div class="large-12 columns">
-                      <h1>LOOKBOOK Celebrate Seaside</h1>
+                      <h1>LOOKBOOK <i>Celebrate Seaside</i></h1>
                   </div>
             </div>
             

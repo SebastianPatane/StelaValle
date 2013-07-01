@@ -1,3 +1,6 @@
+<?php
+$flag = "stellavalle"
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -26,7 +29,7 @@
           </div>
     </div>
     
-	<div class="row blog">
+	<div class="row blog spacing-fix">
     	<div class="small-12 large-9 large-centered columns">
         
         	<!-- Post Blog -->

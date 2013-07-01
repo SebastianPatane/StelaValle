@@ -9,8 +9,8 @@
     version: '4.2.0',
 
     settings: {
-      timer_speed: 10000,
-      pause_on_hover: true,
+      timer_speed: 4000,
+      pause_on_hover: false,
       resume_on_mouseout: false,
       animation_speed: 500,
       bullets: true,

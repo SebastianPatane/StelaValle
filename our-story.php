@@ -1,3 +1,6 @@
+<?php
+$flag = "our-story"
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +12,7 @@
 
   
   <link rel="stylesheet" href="css/foundation.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" type="text/css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=GFS+Didot" type="text/css">
   <link rel="stylesheet" href="css/app.css" />
 
@@ -21,7 +24,7 @@
     <?php require_once('inc/header.php'); ?>
 	
     
-    <div class="row collapse our-story">
+    <div class="row collapse our-story spacing-fix">
           <div class="large-12 columns">
               <h1>OUR STORY</h1>
           </div>
