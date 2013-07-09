@@ -1,14 +1,17 @@
 	<!-- Header -->
  	 <header>
+     
+     <div class="container">
+     	<div class="position-fixed">
 
   	<!-- Shopping Cart -->
 	<div class="row">
    	  	<div class="small-12 large-7 columns free-shipping">
-        	<strong>Free Shipping on orders over $100</strong>
+        		<strong><i>Free Shipping on orders over $100</i></strong>
         </div>
         
       	<div class="small-12 large-5 columns">
-            <a href="#" class="shopping-cart view-cart">View Cart</a>  <span class="show-for-dektop-only header-line-div">|</span>  <a href="#" class="shopping-cart">Customer Service</a> 
+            	<a href="#" class="shopping-cart view-cart">View Cart</a>  <span class="show-for-dektop-only header-line-div">|</span>  <a href="#" class="shopping-cart">Customer Service</a> 
         </div>
     </div>
 	<!-- /Shopping Cart -->
@@ -30,11 +33,11 @@
 				  <section class="top-bar-section">
 				    <!-- Left Nav Section -->
 				    <ul class="left">
-				      <li><a href="index.php">HOME</a></li>
+				      <li><a href="index.php" <?php if ($flag == "home"): echo 'class="current-section"'; endif; ?>>HOME</a></li>
                       <li class="divider"></li>
-				      <li><a href="our-story.php">OUR STORY</a></li>
+				      <li><a href="our-story.php" <?php if ($flag == "our-story"): echo 'class="current-section"'; endif; ?>>OUR STORY</a></li>
                       <li class="divider"></li>
-				      <li class="has-dropdown"><a href="#">COLLECTIONS</a>
+				      <li class="has-dropdown"><a href="#" <?php if ($flag == "collections"): echo 'class="current-section"'; endif; ?>>COLLECTIONS</a>
 				        <ul class="dropdown">
 				          <li><a href="collections.php">STELLA VALLE STRONG</a></li>
                           <li class="divider"></li>
@@ -48,7 +51,7 @@
 				        </ul>
 				      </li>
                       <li class="divider"></li>
-                      <li class="has-dropdown"><a href="#">SHOP</a>
+                      <li class="has-dropdown"><a href="#" <?php if ($flag == "shop"): echo 'class="current-section"'; endif; ?>>SHOP</a>
 				        <ul class="dropdown">
 				          <li><a href="shop.php">ALL PRODUCTS</a></li>
                           <li class="divider"></li>
@@ -65,12 +68,12 @@
 				      </li>
                       
                       <li class="divider show-for-dektop-only"></li>
-                      <li class="show-for-dektop-only desktop-logo"><a href="index.php"><img src="img/logo-desktop.gif" alt="Stella Valle"></a></li>
+                      <li class="show-for-dektop-only desktop-logo"><a href="index.php"><img src="img/logo-desktop.png" alt="Stella Valle"></a></li>
                       
                       <li class="divider"></li>
-                      <li><a href="create.php">CREATE</a> </li>
+                      <li><a href="create.php" <?php if ($flag == "create"): echo 'class="current-section"'; endif; ?>>CREATE</a> </li>
                       <li class="divider"></li>
-                      <li class="has-dropdown"><a href="#">#STELLAVALLE</a>
+                      <li class="has-dropdown"><a href="#" <?php if ($flag == "stellavalle"): echo 'class="current-section"'; endif; ?>>#STELLAVALLE</a>
                       	<ul class="dropdown">
 				          <li><a href="hashtag.php">SOCIAL</a></li>
                           <li class="divider"></li>
@@ -78,9 +81,9 @@
 				        </ul>
                       </li>
                       <li class="divider"></li>
-                      <li><a href="press.php">PRESS</a></li>
+                      <li><a href="press.php" <?php if ($flag == "press"): echo 'class="current-section"'; endif; ?>>PRESS</a></li>
                       <li class="divider"></li>
-                      <li><a href="stockist.php">STOCKISTS</a></li>
+                      <li><a href="stockist.php" <?php if ($flag == "stockist"): echo 'class="current-section"'; endif; ?>>STOCKISTS</a></li>
 				    </ul>
 				  </section>
 				</nav>
@@ -88,4 +91,8 @@
       </div>
     </div>
     
+    
+    
+    	</div>
+    </div>
     </header>

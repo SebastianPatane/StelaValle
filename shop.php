@@ -1,3 +1,6 @@
+<?php
+$flag = "shop"
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -25,21 +28,32 @@
     
     <div class="row collapse our-story">
           <div class="large-12 columns">
-              <h1>SHOP  Necklaces</h1>
+              <h1>SHOP Necklaces</h1>
+          </div>
+    </div>
+    
+    <div class="row shop collapse spacing-fix show-for-dektop-only">
+          <div class="large-12 columns text-center">
+              <h1>NECKLACES</h1>
           </div>
     </div>
     
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-11 large-centered columns">
                 
-                <div id="products">
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example.jpg" class="grayscale"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example.jpg" class="grayscale"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example.jpg" class="grayscale"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example.jpg" class="grayscale"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example.jpg" class="grayscale"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example.jpg" class="grayscale"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example.jpg" class="grayscale"><br>CONQUER $65</a></div>
+                <div id="products">                      
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example02.jpg" onmouseover="this.src='img/shop/example02-hover.jpg'" onmouseout="this.src='img/shop/example02.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example03.jpg" onmouseover="this.src='img/shop/example03-hover.jpg'" onmouseout="this.src='img/shop/example03.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example04.jpg" onmouseover="this.src='img/shop/example04-hover.jpg'" onmouseout="this.src='img/shop/example04.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example02.jpg" onmouseover="this.src='img/shop/example02-hover.jpg'" onmouseout="this.src='img/shop/example02.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example03.jpg" onmouseover="this.src='img/shop/example03-hover.jpg'" onmouseout="this.src='img/shop/example03.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example04.jpg" onmouseover="this.src='img/shop/example04-hover.jpg'" onmouseout="this.src='img/shop/example04.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example02.jpg" onmouseover="this.src='img/shop/example02-hover.jpg'" onmouseout="this.src='img/shop/example02.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example03.jpg" onmouseover="this.src='img/shop/example03-hover.jpg'" onmouseout="this.src='img/shop/example03.jpg'"><br>CONQUER $65</a></div>
+                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example04.jpg" onmouseover="this.src='img/shop/example04-hover.jpg'" onmouseout="this.src='img/shop/example04.jpg'"><br>CONQUER $65</a></div>
                 </div>
         
         </div>
@@ -74,7 +88,7 @@
 		  msnry = new Masonry( container, {
 			  // options
 			  itemSelector: '.item',
-			  "gutter": 30
+			  "gutter": 10
 			});
 		});
 	});

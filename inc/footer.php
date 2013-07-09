@@ -2,27 +2,21 @@
 	<footer>
     
 	<div class="row collapse social-footer">
-        <div class="large-2 large-offset-7 small-5 columns">
-			<form action="#">
-            	<div class="row collapse">
-                    <div class="small-10 columns">
-                      <input type="text" placeholder="Stay in touch...">
-                    </div>
-                    <div class="small-2 columns">
-                      <a href="#" class="button prefix">&#8250;</a>
-                    </div>
-                </div>
-            </form>
-		</div>
+		<div class="large-12 columns">
         
-        <div class="large-3 small-7 columns">
 			<ul class="social-links right">
-            	<li><a href="#" class="facebook">Facebook</a></li>
+            	<li><a href="https://www.facebook.com/pages/stella-valle/113196925361707" class="facebook">Facebook</a></li>
                 <li><a href="#" class="instagram">Instagram</a></li>
-                <li><a href="#" class="pinterest">Pinterest</a></li>
-                <li><a href="#" class="twitter">Twitter</a></li>
+                <li><a href="http://pinterest.com/stellavalle/" class="pinterest">Pinterest</a></li>
+                <li><a href="https://twitter.com/stellavallenyc" class="twitter">Twitter</a></li>
                 <li><a href="#" class="vimeo">Vimeo</a></li>
             </ul>
+            
+            <form action="#" class="footer-newsletter right">
+                <input type="text" placeholder="Stay in touch...">
+                <a href="#" class="button prefix"></a>
+            </form>
+            
         </div>
 	</div>
     

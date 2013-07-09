@@ -1,3 +1,6 @@
+<?php
+$flag = "home"
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -16,6 +19,23 @@
   <link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
   <script src="js/vendor/custom.modernizr.js"></script>
+  
+  <style type="text/css">
+  	@media only screen and (min-width: 941px) {
+  		.fancybox-wrap {
+		  	top: 20% !important; 
+		  	left: 2% !important; 
+		} 
+	}
+	
+	@media only screen and (min-width: 1290px) {
+  		.fancybox-wrap {
+		  	top: 20% !important; 
+		  	left: 12% !important; 
+		} 
+	}
+	
+  </style>
 
 </head>
 <body>
@@ -24,7 +44,7 @@
     <?php require_once('inc/header.php'); ?>
 
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="large-12 columns" style="position:relative;">
 			
             <div class="slideshow-wrapper">
   				<div class="preloader"></div>
@@ -37,33 +57,30 @@
         
         </div>
 	</div>
-
-	
-    <?php require_once('inc/footer.php'); ?>
     
     
     <!-- Slider Modals -->
     <div id="Featured-Product" class="home-modal">
-      	<div class="row">
-        		
+        <div class="row">
+                
                 <div class="small-12 large-5 columns featured-title">
-                	<h1><strong>TREND</strong> REPORT</h1>
+                    <h1><strong>TREND</strong> REPORT</h1>
                 </div>
                 
                 <div class="small-12 large-7 columns text-center">
-                	<h2><i>Shark Tank Sale</i></h2>
-                    <span class="show-for-large-up">ENDS MAY 24TH</span>
+                    <h2><i>Shark Tank Sale</i></h2>
+                    <span class="show-for-dektop-only">ENDS MAY 24TH</span>
                 </div>
                 
-                <div class="row collapse featured-descripcion hide-for-large-up">
+                <div class="row collapse featured-descripcion show-for-mobile">
                     <a href="#" class="small-image-video"><img src="http://placehold.it/80x80"></a>
                     <span>ENDS MAY 24TH</span><br>
                     AS FEATURED ON<br>
                     abc's <strong>SHARK TANK</strong>
                 </div>
-
-                <div class="row collapse hide-for-large-up">
-                	<div class="small-6 columns">
+  
+                <div class="row collapse show-for-mobile">
+                    <div class="small-6 columns">
                         <img src="http://placehold.it/80x80">
                     </div>
                     <div class="small-6 columns text-center">
@@ -73,11 +90,11 @@
                     </div>
                 </div>
                 
-                <div class="large-12 columns show-for-large-up text-center">
-                	<a href="#"><img src="http://placehold.it/390x220" class="bigger-video"></a>
+                <div class="large-12 columns show-for-dektop-only text-center">
+                    <a href="#"><img src="http://placehold.it/390x220" class="bigger-video"></a>
                 </div>
                 
-                <div class="large-12 columns show-for-large-up text-center">
+                <div class="large-12 columns show-for-dektop-only text-center">
                     <ul id="Featured-Carousel"> 
                         <li><img src="http://placehold.it/160x90"></li>
                         <li><img src="http://placehold.it/160x90"></li>
@@ -91,7 +108,10 @@
                 
         </div>
     </div>
-	<!-- /Slider Modals -->
+    <!-- /Slider Modals -->
+
+	
+    <?php require_once('inc/footer.php'); ?>
     
   <script>
   document.write('<script src=' +
@@ -109,7 +129,7 @@
   
   <script>
   	$(document).foundation();
-	
+		
 	/*** Comment this lines to disable the popup ***/
 	$.fancybox.open({
 		href : '#Featured-Product',

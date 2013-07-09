@@ -1,3 +1,6 @@
+<?php
+$flag = "collections"
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -23,24 +26,24 @@
     <?php require_once('inc/header.php'); ?>
 	
     
-    <div class="row collapse our-story">
+    <div class="row collapse our-story spacing-fix">
           <div class="large-12 columns">
               <h1>COLLECTIONS  Celebrate Seaside</h1>
           </div>
     </div>
     
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="small-12 large-11 large-centered columns">
                 
                 <ul id="Collections"> 
-                    <li><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</li>
-                    <li><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</li>
-                    <li><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</li>
-                    <li><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</li>
+                    <li><a href="shop-detail.php"><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</a></li>
+                    <li><a href="shop-detail.php"><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</a></li>
+                    <li><a href="shop-detail.php"><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</a></li>
+                    <li><a href="shop-detail.php"><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</a></li>
                 </ul>
                 
                 
-                <div class="row collapse our-collection-title hide-for-large-up">
+                <div class="row collapse our-collection-title show-for-mobile">
                 	<div class="large-6 columns our-collections">
                     	<h1>CELEBRATE SEASIDE</h1>
                     </div>
@@ -50,7 +53,7 @@
                     </div>
                 </div>
                 
-                <h1 class="our-collections-h1 show-for-large-up">CELEBRATE SEASIDE</h1>
+                <h1 class="our-collections-h1 show-for-dektop-only">CELEBRATE SEASIDE</h1>
                 
                 <p>Ashley and Paige looked to the vibrant memories of their childhood summer nights spent walking the boardwalk in Seaside Heights, NJ for the inspiration of the Celebrate Seaside collection. The sisters’ desire to relive the lighthearted, fantasy-filled time led to the creation of the daring designs.</p>
 
@@ -60,18 +63,18 @@
                 
                 <p>The natural catastrophe has simply impassioned the girls to help rebuild the boardwalk. Paige and Ashley chose their most prominent piece, the Ferris Wheel Flight Bangle, to donate a 10% portion of its proceeds to the Omaze Restore the Shore Charity.</p>
                 
-                <p><a href="#look-book-desktop" class="show-for-large-up text-center view-lookbook-desktop">VIEW LOOKBOOK</a></p>
+                <p><a href="#look-book-desktop" class="show-for-dektop-only text-center view-lookbook-desktop">VIEW LOOKBOOK</a></p>
         
         </div>
 	</div>
     
     <!-- LOOKBOOK MODULE RESPONSIVE -->
-    <div class="row hide-for-large-up" id="look-book-responsive">
+    <div class="row show-for-mobile" id="look-book-responsive">
     	<div class="large-12 columns">
         			
             <div class="row collapse look-book">
                   <div class="large-12 columns">
-                      <h1>LOOKBOOK Celebrate Seaside</h1>
+                      <h1>LOOKBOOK <i>Celebrate Seaside</i></h1>
                   </div>
             </div>
             
@@ -92,8 +95,8 @@
     <!-- /LOOKBOOK MODULE RESPONSIVE -->
     
     <!-- LOOKBOOK MODULE DESKTOP -->
-    <div class="row show-for-large-up">
-    	<div class="large-12 columns">
+    <div class="row show-for-dektop-only">
+    	<div class="large-11 large-centered columns">
         	
             <div id="main">
 				<div id="exposure"></div>
@@ -104,18 +107,18 @@
             	<div class="large-12 columns">
                     <div id="left"><a href="javascript:void(0);"><img src="img/button-previous.png" alt="Previous" /></a></div>				
                     <ul id="images">
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 1"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 2"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 3"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 4"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 5"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 6"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 7"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 8"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 9"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 10"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 11"></a></li>
-                        <li><a href="http://placehold.it/1065x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 12"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 1"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 2"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 3"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 4"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 5"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 6"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 7"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 8"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 9"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 10"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 11"></a></li>
+                        <li><a href="http://placehold.it/1000x520"><img src="http://placehold.it/76x56" title="LOOKBOOK Celebrate Seaside 12"></a></li>
                     </ul>	
                     <div id="right"><a href="javascript:void(0);"><img src="img/button-next.png" alt="Next" /></a></div>
                     <div class="clear" id="look-book-desktop"></div>

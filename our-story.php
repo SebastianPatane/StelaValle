@@ -1,3 +1,6 @@
+<?php
+$flag = "our-story"
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +12,7 @@
 
   
   <link rel="stylesheet" href="css/foundation.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" type="text/css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=GFS+Didot" type="text/css">
   <link rel="stylesheet" href="css/app.css" />
 
@@ -21,7 +24,7 @@
     <?php require_once('inc/header.php'); ?>
 	
     
-    <div class="row collapse our-story">
+    <div class="row collapse our-story spacing-fix">
           <div class="large-12 columns">
               <h1>OUR STORY</h1>
           </div>
@@ -31,29 +34,20 @@
 		<div class="large-12 columns our-story">
 				
                 <!-- Only for Mobile device -->
-                <div class="row collapse show-for-small">
-                	<div class="small-12 columns">
-                        <img src="img/img-our-story.jpg" alt="OUR STORY"> 
-                        <h2>MEET ASHLEY & PAIGE</h2>
+                <div class="row collapse show-for-mobile">
+                	<div class="large-6 columns">
+                        <img src="img/img-our-story.jpg" alt="OUR STORY" class="our-story-image"> 
+                    </div>
+                    <div class="large-6 columns our-story-ipad">
+                        <h2><span>MEET</span> ASHLEY & PAIGE</h2>
                 		<h3>ARMY PAST, FASHION PRESENT</h3>
                     </div>
                 </div>
                 <!-- /Only for Mobile device -->
-                
-                <!-- Only for Tablet device -->
-                <div class="row collapse row-story-borders show-for-medium">
-                	<div class="large-6 small-6 columns">
-        				<img src="img/img-our-story.jpg" alt="OUR STORY"> 
-                	</div>
-                    <div class="large-6 small-6 columns text-center">
-                		<h2><span>MEET</span><br>ASHLEY & PAIGE</h2>
-                		<h3>ARMY PAST, FASHION PRESENT</h3>
-                	</div>
-                </div>
-                <!-- /Only for Tablet device -->
+              
                 
                 <!-- Only for Desktop device -->
-                <div class="row show-for-large-up">
+                <div class="row show-for-dektop-only">
                 	<div class="large-4 columns">
         				<h2><span>MEET</span><br>ASHLEY & PAIGE</h2>
                 	</div>
@@ -64,7 +58,7 @@
                 <!-- /Only for Desktop device -->
                 
                 
-                <img src="img/img-our-story.jpg" alt="OUR STORY" class="video-desktop show-for-large-up"> 
+                <img src="img/img-our-story.jpg" alt="OUR STORY" class="video-desktop show-for-dektop-only"> 
                 
                 <p>The designers, sisters Ashley Jung and Paige Dellavalle, knew their experience as West Point military cadets and U.S. Army Officers didn’t make them the most obvious choices as chic arbiters of style. While they donned the drab, olive, camouflage fatigues that came with military life, their vision for life after the military remained lucid.</p>
 

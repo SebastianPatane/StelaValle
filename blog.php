@@ -1,3 +1,6 @@
+<?php
+$flag = "stellavalle"
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -26,8 +29,8 @@
           </div>
     </div>
     
-	<div class="row blog">
-    	<div class="small-12 large-9 large-centered columns">
+	<div class="row blog spacing-fix">
+    	<div class="small-12 large-10 large-centered columns">
         
         	<!-- Post Blog -->
             <div class="row">
@@ -41,8 +44,8 @@
                     
                     <!-- Social Share Module -->
                     <div class="row collapse">
-                    	<div class="small-8 large-8 columns"><a href="#" class="posted-by">BY <strong>SV1200</strong></a></div> 
-                        <div class="small-4 large-4 columns">
+                    	<div class="small-9 large-10 columns"><a href="#" class="posted-by">BY <strong>SV1200</strong></a></div> 
+                        <div class="small-3 large-2 columns">
                         	<ul class="social-links">
                                 <li><a href="#" class="facebook">Facebook</a></li>
                                 <li><a href="#" class="twitter">Twitter</a></li>
@@ -69,8 +72,8 @@
                     
                     <!-- Social Share Module -->
                     <div class="row collapse">
-                    	<div class="small-8 large-8 columns"><a href="#" class="posted-by">BY <strong>SV1200</strong></a></div> 
-                        <div class="small-4 large-4 columns">
+                    	<div class="small-9 large-10 columns"><a href="#" class="posted-by">BY <strong>SV1200</strong></a></div> 
+                        <div class="small-3 large-2 columns">
                         	<ul class="social-links">
                                 <li><a href="#" class="facebook">Facebook</a></li>
                                 <li><a href="#" class="twitter">Twitter</a></li>
@@ -96,8 +99,8 @@
                     
                     <!-- Social Share Module -->
                     <div class="row collapse">
-                    	<div class="small-8 large-8 columns"><a href="#" class="posted-by">BY <strong>SV1200</strong></a></div> 
-                        <div class="small-4 large-4 columns">
+                    	<div class="small-9 large-10 columns"><a href="#" class="posted-by">BY <strong>SV1200</strong></a></div> 
+                        <div class="small-3 large-2 columns">
                         	<ul class="social-links">
                                 <li><a href="#" class="facebook">Facebook</a></li>
                                 <li><a href="#" class="twitter">Twitter</a></li>
