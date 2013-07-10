@@ -405,6 +405,22 @@ ul#images-shop-detail.exposureThumbs li img {
 	height:60px;
 }
 
+ul#images-shop-thumbails li {
+	margin:10px 5px 0px 0;
+	float:left;
+	/*border:1px solid #000;*/
+	list-style-type:none;
+}
+
+ul#images-shop-thumbails li img {
+	margin:10px 5px 0px 0;
+	float:left;
+	/*border:1px solid #000;*/
+	list-style-type:none;
+	width:60px;
+	height:60px;
+}
+
 .large.button.expand.add-cart {
 	background-color:#000;
 	border-color:#000;
@@ -562,6 +578,11 @@ a.read-reviews:hover {
 	border-right:1px solid #000;
 }
 
+.home-modal .featured-title {
+	border-bottom:none;
+	border-right:1px solid #ccc;
+}
+
 /********** OUR STORY ************/
 .our-story h1 {
 	border-bottom:1px solid #000;
@@ -618,6 +639,25 @@ a.view-look-book {
 /************* OUR SHOP ************/
 ul#images-shop-detail.exposureThumbs li {
 	margin:0px 0px 10px 20px;
+}
+
+
+ul#images-shop-thumbails  {
+	margin:0px;
+	padding:0px;
+}
+
+ul#images-shop-thumbails li {
+	margin:0px 3px 10px 10px;
+	float:none;
+	height:75px;
+}
+
+ul#images-shop-thumbails li img {
+	cursor:pointer;
+	margin:0px;
+	width:75px;
+	height:75px;
 }
 
 /******** BLOG *****************/
@@ -799,6 +839,10 @@ a.shopping-cart.view-cart {
 	border:none;
 }
 
+.desktop-footer {
+	padding-top:10px;
+}
+
 .desktop-footer a {
 	font-size:12px;
 	padding:0px 20px 0px 0px;
@@ -957,8 +1001,31 @@ ul#images-shop-detail.exposureThumbs li img {
 	height:110px;
 }
 
+#big-image img {
+	max-width:100%;
+	height:auto;
+}
+
 ul.exposureThumbs li img {
 	cursor:pointer;
+}
+
+ul#images-shop-thumbails  {
+	margin:0px;
+	padding:0px;
+}
+
+ul#images-shop-thumbails li {
+	margin:0px 3px 14px 20px;
+	float:none;
+	height:120px;
+}
+
+ul#images-shop-thumbails li img {
+	width:120px;
+	height:120px;
+	cursor:pointer;
+	margin:0px;
 }
 
 ul.exposureThumbs li.last {
@@ -1034,7 +1101,7 @@ ul.exposureThumbs li {
 
 
 /*********** SHOP ****************/
-.item { width: 265px; }
+.item { width: 240px; }
 
 .shop-detail {
 	padding:40px 0px 50px 0px;
@@ -1072,7 +1139,7 @@ ul.exposureThumbs li {
 	margin:20px 0px 20px 0px;}
 	
 .shop-detail form.custom {
-	width:53%;
+	width:55%;
 }
 
 
@@ -1085,7 +1152,7 @@ ul.exposureThumbs li {
 
 /******** HASH TAG *****************/
 .hashtag {
-	padding:30px 0px 0px 40px;
+	padding:30px 0px 0px 0px;
 }
 
 /******** BLOG *****************/

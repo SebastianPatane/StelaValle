@@ -30,20 +30,9 @@ $flag = "stellavalle"
     </div>
     
 	<div class="row spacing-fix">
-        <div class="small-12 large-11 large-centered columns hashtag">
+        <div class="small-12 large-9 large-centered columns hashtag">
 				
-				<div id="content" ><!-- Start Content -->
-				
-				<div id="cloud-masonry-wrapper" class="cloud-masonry-361">
-					<div id="cloud-header">
-						<div id="cloud-title">#StellaValle</div>
-					</div>
-					<div id="cloud-container">
-						<div id="cloud-content"></div>
-					</div>
-				</div>
-				
-				</div><!-- End Content -->
+			 <div id="social-stream"></div>
 
         </div>
 	</div>
@@ -62,35 +51,41 @@ $flag = "stellavalle"
   <script src="js/foundation.min.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script> 
   
-  <script src='http://storesdev.zindigo.com/js/76/jquery.social.stream.1.5.1.js'></script>
-  <link href="http://storesdev.zindigo.com/css/76/dcsns_wall.css" rel="stylesheet" />
-  <script src='http://storesdev.zindigo.com/js/76/jquery.social.stream.wall.1.3.js'></script>
+  	<link rel="stylesheet" type="text/css" href="css/dcsns_wall.css" media="all" />
+	<script type="text/javascript" src="js/jquery.social.stream.wall.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.social.stream.1.5.2.js"></script>
+
   <script type="text/javascript">
-  $(document).ready(function () {
-      //rsContainer('cloud');
-      $('#cloud-content').dcSocialStream({
-          feeds: {
-              twitter: { id: 'nicoleromanonyc' },
-              facebook: { id: '101534458200',
-              out: 'intro,thumb,text,user,share' },
-              pinterest: { id: 'nicoleromanonyc' },
-              instagram: { id: '!193019709', 
-              clientId: '2c0d6f9599634fc4a116b7b581cc05d6',
-              accessToken: '295249637.2c0d6f9.a51f8ca14d504234b8d718e9aa72cd14',
-              redirectUrl: 'https://zindigo.com' }
-              }, 		
-              
-              rotate: { delay: 0 },
-              twitterId: 'nicoleromanonyc',
-              control: false,
-              filter: true,
-              wall: true,
-              cache: false,
-              max: 'limit',
-              limit: 10,
-              iconPath: 'http://storesdev.zindigo.com/images/page/76/dcsns-dark/',
-              imagePath: 'http://storesdev.zindigo.com/images/page/76/dcsns-dark/'});
-  });
+  $(document).ready(function($){
+	$('#social-stream').dcSocialStream({
+		feeds: {
+			twitter: {
+				id: 'stellavallenyc'
+			},
+			facebook: {
+				id: '113196925361707'
+			},
+			vimeo: {
+				id: '14490516'
+			},
+			pinterest: {
+				id: 'stellavalle'
+			}
+		},
+		rotate: {
+			delay: 0
+		},
+		twitterId: 'stellavallenyc',
+		control: false,
+		filter: true,
+		wall: true,
+		cache: false,
+		max: 'limit',
+		limit: 30,
+		iconPath: 'images/dcsns-dark/',
+		imagePath: 'images/dcsns-dark/'
+	});
+});
   </script>
   
   <script>

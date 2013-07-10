@@ -15,10 +15,9 @@ $flag = "shop"
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=GFS+Didot" type="text/css">
   <link rel="stylesheet" href="css/app.css" />
-  <link rel="stylesheet" href="css/carousel.css" />
   
   <script src="js/vendor/custom.modernizr.js"></script>
-
+  
 </head>
 <body>
 	
@@ -38,14 +37,16 @@ $flag = "shop"
                 <div class="row collapse">
                 
 					<div class="small-12 large-8 columns">
-                    	<div id="exposure"></div>
+                    	<div id="big-image">
+                        	<img src="http://placehold.it/410x390">
+                        </div>
                     </div>
                     
                     <div class="small-12 large-4 columns">
-                        <ul id="images-shop-detail">
-                            <li><a href="http://placehold.it/360x360"><img src="http://placehold.it/110x110"></a></li>
-							<li><a href="http://placehold.it/360x360"><img src="http://placehold.it/110x110"></a></li>
-                            <li><a href="http://placehold.it/360x360"><img src="http://placehold.it/110x110"></a></li>
+                        <ul id="images-shop-thumbails">
+                            <li><img src="http://placehold.it/410x390"></li>
+							<li><img src="http://placehold.it/410x390"></li>
+                            <li><img src="http://placehold.it/410x390"></li>
                         </ul>
                     </div>
                     
@@ -138,52 +139,20 @@ $flag = "shop"
   <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
   <script src="js/foundation.min.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script> 
-  <script src="js/jquery.exposure.js"></script> 
   
   <script>
   	$(document).foundation();
 	
-	/*** Carousel ***/
-	$(function(){
-		var gallery = $('#images-shop-detail');
-		gallery.exposure({carouselControls : true,
-			imageControls : false,
-			pageSize : 5,
-			slideshowControlsTarget : '#slideshow',
-			onThumb : function(thumb) {
-				var li = thumb.parents('li');				
-				var fadeTo = li.hasClass($.exposure.activeLinkClass) ? 1 : 0.3;
-				
-				thumb.css({display : 'none', opacity : fadeTo}).stop().fadeIn(200);
-				
-				thumb.hover(function() { 
-					thumb.fadeTo('fast',1); 
-				}, function() { 
-					li.not('.' + $.exposure.activeLinkClass).children('img').fadeTo('fast', 0.3);
-				});
-			},
-			onImage : function(image, imageData, thumb) {
-				// Fade out the previous image.
-				image.siblings('.' + $.exposure.lastImageClass).stop().fadeOut(50, function() {
-					$(this).remove();
-				});
-				
-				// Fade in the current image.
-				image.hide().stop().fadeIn(1000);
-				
-				if (gallery.showThumbs && thumb && thumb.length) {
-					thumb.fadeTo('fast', 1).addClass($.exposure.selectedImageClass);
-				}
-			},
-			onCarousel : function(firstImage, lastImage) {
-				$('.' + $.exposure.thumbsClass + ' li').hide().children('img.' + $.exposure.selectedImageClass).stop().css('opacity', 0.3).removeClass($.exposure.selectedImageClass);
-			},
-			onSlideshowPlayed : function() {
-				$('.' + $.exposure.pauseSlideshowClass).css('display','inline');
-			}
-		});
-		
-	});
+	$(document).ready(function () {
+            $("#images-shop-thumbails img").click(function () {
+                var changeSrc = $(this).attr("src");
+                var changeAlt = $(this).attr("alt");
+				$("#big-image img").fadeOut("fast");
+                $("#big-image img").attr("src", changeSrc);
+				$("#big-image img").fadeIn("fast");
+                var changeAlt = $(this).attr("alt");
+            });
+	}); 
   </script>
   
 </body>

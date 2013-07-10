@@ -39,7 +39,7 @@ $flag = "shop"
     </div>
     
 	<div class="row">
-		<div class="large-11 large-centered columns">
+		<div class="large-12 large-centered columns">
                 
                 <div id="products">                      
                       <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></div>
@@ -88,7 +88,8 @@ $flag = "shop"
 		  msnry = new Masonry( container, {
 			  // options
 			  itemSelector: '.item',
-			  "gutter": 10
+			  "gutter": 0
+			  /*columnWidth: 270*/
 			});
 		});
 	});

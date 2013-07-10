@@ -42,6 +42,17 @@
 	font-weight:400;
 	color:#000;
 }
+
+@media only screen 
+and (min-width : 767px) 
+and (max-width : 1001px) {
+
+	.nbs-flexisel-item {
+		margin-right:50px;
+	}
+
+}
+
 .nbs-flexisel-item img {
     width: 100%;
     cursor: pointer;
