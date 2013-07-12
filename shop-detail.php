@@ -77,23 +77,23 @@ $flag = "shop"
                     
                 </div>
                 
-                <form class="custom">
+                <form id="shop" class="custom">
                       <div class="row collapse">
                       	<div class="small-12 large-8 columns shop-forms-spacing">
-                          <select id="customDropdown1" class="medium choose">
+                          <select class="medium choose">
                             <option selected>CHOOSE FINISH</option>
-                            <option>This is another option</option>
-                            <option>This is another option too</option>
-                            <option>Look, a third option</option>
+                            <option value="0">This is another option</option>
+                            <option value="0">This is another option too</option>
+                            <option value="0">Look, a third option</option>
                           </select>
                       	</div>
                       	
                         <div class="small-12 large-4 columns">
-                          <select id="customDropdown1" class="medium quantity">
+                          <select class="medium quantity">
                             <option selected>Qty.</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                            <option value="0">1</option>
+                            <option value="0">2</option>
+                            <option value="0">3</option>
                           </select>
                       	</div>
                       </div>
@@ -129,16 +129,18 @@ $flag = "shop"
 
 	<?php require_once('inc/footer.php'); ?>
     
-
+  
+  <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+  
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
   '.js><\/script>')
   </script>
-  
-  <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
-  <script src="js/foundation.min.js"></script>
+
+  <script src="js/foundation/foundation.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script> 
+  <script src="js/foundation/foundation.forms.js"></script>
   
   <script>
   	$(document).foundation();

@@ -47,6 +47,8 @@ a.shopping-cart {
 	text-align:center;
 }
 
+ol.orbit-bullets { display: table; text-align: center;}
+
 /***** Footer ****/
 .social-footer {
 	border-top:1px solid #000;
@@ -233,6 +235,15 @@ ul.social-links li a.vimeo:hover {
 	text-decoration:underline;
 }
 
+.home-modal .modal-home-border {
+	border-right:1px solid #ccc;
+}
+
+.home-modal .modal-row-border {
+	border-top:1px solid #000;
+	padding-top:10px;
+}
+
 /***** Orbit Hidden Class *****/
 .orbit-prev, .orbit-next, .orbit-slide-number {
 	display:none;
@@ -335,6 +346,10 @@ ul.lookbook-responsive li {
 	color:#000;
 	margin:10px 0px 10px 0px;
 	padding-bottom:10px;
+}
+
+.collection-paragraphs p {
+	font-size:13px;
 }
 
 /*********** SHOP ****************/
@@ -913,6 +928,7 @@ h1.our-collections-h1 {
 	padding-bottom:0px;
 	text-align:center;
 	margin-bottom:20px;
+	padding-top:20px;
 }
 
 .nbs-flexisel-container {
@@ -1229,6 +1245,10 @@ ul.exposureThumbs li {
 }
 
 
+#look-book-responsive 		{ display:none;}
+#look-book-desktop-content 	{ display:none;}
+
+
 @media only screen 
 and (min-width : 1200px) {
 
@@ -1321,4 +1341,41 @@ h1.our-collections-h1 {
 	width:53%;
 }
 
+}
+
+/*************************************
+/***** HOME MODAL BOX QUERIES *******/
+
+@media only screen and (min-width: 941px) {
+	#home .fancybox-wrap {
+		top: 20% !important; 
+		left: 2% !important; 
+	} 
+}
+	
+@media only screen and (min-width: 1290px) {
+	#home .fancybox-wrap {
+		top: 20% !important; 
+		left: 12% !important; 
+	} 
+}
+
+@media only screen and (min-width: 479px) and (max-width: 950px) {
+	#home .fancybox-opened {
+		width:370px !important;
+	}
+	
+	#home .fancybox-inner {
+		width:auto !important;
+	}
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1980px) {
+	#home .fancybox-opened {
+		width:453px !important;
+	}
+	
+	#home .fancybox-inner {
+		width:auto !important;
+	}
 }

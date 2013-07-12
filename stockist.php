@@ -179,7 +179,7 @@ $flag = "stockist"
   </script>
   
   <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
-  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script> 
   
   <script>

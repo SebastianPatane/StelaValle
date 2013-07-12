@@ -33,7 +33,7 @@ $flag = "collections"
     </div>
     
 	<div class="row">
-		<div class="small-12 large-11 large-centered columns">
+		<div class="small-12 large-11 large-centered columns collection-paragraphs">
                 
                 <ul id="Collections"> 
                     <li><a href="shop-detail.php"><img src="http://placehold.it/220x220"><br>LIGHTENING BUG <br>$125</a></li>
@@ -68,8 +68,9 @@ $flag = "collections"
         </div>
 	</div>
     
-    <!-- LOOKBOOK MODULE RESPONSIVE -->
-    <div class="row show-for-mobile" id="look-book-responsive">
+    <!-- LOOKBOOK MODULE RESPONSIVE 
+    <div class="row show-for-mobile" id="look-book-responsive">-->
+    <div class="row" id="look-book-responsive">
     	<div class="large-12 columns">
         			
             <div class="row collapse look-book">
@@ -94,8 +95,9 @@ $flag = "collections"
     </div>
     <!-- /LOOKBOOK MODULE RESPONSIVE -->
     
-    <!-- LOOKBOOK MODULE DESKTOP -->
-    <div class="row show-for-dektop-only">
+    <!-- LOOKBOOK MODULE DESKTOP 
+    <div class="row show-for-dektop-only" id="look-book-desktop-content">-->
+    <div class="row" id="look-book-desktop-content">
     	<div class="large-11 large-centered columns">
         	
             <div id="main">
@@ -140,7 +142,7 @@ $flag = "collections"
   </script>
   
   <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
-  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script>
   <script src="js/jquery.flexisel.js"></script>
   <script src="js/jquery.scrollto.js"></script>
@@ -152,12 +154,67 @@ $flag = "collections"
 	
 	/*** Scoll To Plugin ***/
 	$('a.view-look-book').click(function(e){
+		$("#look-book-responsive").fadeIn('fast');
 		$.scrollTo(this.hash, this.hash);
 		e.preventDefault();
 	});
 	$('a.view-lookbook-desktop').click(function(e){
+		$("#look-book-desktop-content").fadeIn('fast');
 		$.scrollTo(this.hash, this.hash);
 		e.preventDefault();
+		
+					
+					
+					/*** Desktop Carousel ***/
+					$(function(){
+						var gallery = $('#images');
+						gallery.exposure({carouselControls : true,
+							imageControls : true,
+							pageSize : 5,
+							slideshowControlsTarget : '#slideshow',
+							onThumb : function(thumb) {
+								var li = thumb.parents('li');				
+								var fadeTo = li.hasClass($.exposure.activeLinkClass) ? 1 : 0.3;
+								
+								thumb.css({display : 'none', opacity : fadeTo}).stop().fadeIn(200);
+								
+								thumb.hover(function() { 
+									thumb.fadeTo('fast',1); 
+								}, function() { 
+									li.not('.' + $.exposure.activeLinkClass).children('img').fadeTo('fast', 0.3);
+								});
+							},
+							onImage : function(image, imageData, thumb) {
+								// Fade out the previous image.
+								image.siblings('.' + $.exposure.lastImageClass).stop().fadeOut(500, function() {
+									$(this).remove();
+								});
+								
+								// Fade in the current image.
+								image.hide().stop().fadeIn(1000);
+								
+								if (gallery.showThumbs && thumb && thumb.length) {
+									thumb.fadeTo('fast', 1).addClass($.exposure.selectedImageClass);
+								}
+							},
+							onCarousel : function(firstImage, lastImage) {
+								$('.' + $.exposure.thumbsClass + ' li').hide().children('img.' + $.exposure.selectedImageClass).stop().css('opacity', 0.3).removeClass($.exposure.selectedImageClass);
+							},
+							onSlideshowPlayed : function() {
+								$('.' + $.exposure.pauseSlideshowClass).css('display','inline');
+							}
+						});
+						
+						$('#left a').click(function() {
+							gallery.nextImage();
+						});
+						
+						$('#right a').click(function() {
+							gallery.prevImage();
+						});
+						
+					});
+					
 	});
 	
 	/*** Carousel Plugin ***/
@@ -186,55 +243,7 @@ $flag = "collections"
 		$('.fancybox').fancybox();
 	});
 	
-	/*** Desktop Carousel ***/
-	$(function(){
-		var gallery = $('#images');
-		gallery.exposure({carouselControls : true,
-			imageControls : true,
-			pageSize : 5,
-			slideshowControlsTarget : '#slideshow',
-			onThumb : function(thumb) {
-				var li = thumb.parents('li');				
-				var fadeTo = li.hasClass($.exposure.activeLinkClass) ? 1 : 0.3;
-				
-				thumb.css({display : 'none', opacity : fadeTo}).stop().fadeIn(200);
-				
-				thumb.hover(function() { 
-					thumb.fadeTo('fast',1); 
-				}, function() { 
-					li.not('.' + $.exposure.activeLinkClass).children('img').fadeTo('fast', 0.3);
-				});
-			},
-			onImage : function(image, imageData, thumb) {
-				// Fade out the previous image.
-				image.siblings('.' + $.exposure.lastImageClass).stop().fadeOut(500, function() {
-					$(this).remove();
-				});
-				
-				// Fade in the current image.
-				image.hide().stop().fadeIn(1000);
-				
-				if (gallery.showThumbs && thumb && thumb.length) {
-					thumb.fadeTo('fast', 1).addClass($.exposure.selectedImageClass);
-				}
-			},
-			onCarousel : function(firstImage, lastImage) {
-				$('.' + $.exposure.thumbsClass + ' li').hide().children('img.' + $.exposure.selectedImageClass).stop().css('opacity', 0.3).removeClass($.exposure.selectedImageClass);
-			},
-			onSlideshowPlayed : function() {
-				$('.' + $.exposure.pauseSlideshowClass).css('display','inline');
-			}
-		});
-		
-		$('#left a').click(function() {
-			gallery.nextImage();
-		});
-		
-		$('#right a').click(function() {
-			gallery.prevImage();
-		});
-		
-	});
+	
 	
   </script>
   

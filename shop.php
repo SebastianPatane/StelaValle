@@ -15,8 +15,6 @@ $flag = "shop"
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=GFS+Didot" type="text/css">
   <link rel="stylesheet" href="css/app.css" />
-  <link rel="stylesheet" href="css/carousel.css" />
-  <link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
   
   <script src="js/vendor/custom.modernizr.js"></script>
 
@@ -41,20 +39,27 @@ $flag = "shop"
 	<div class="row">
 		<div class="large-12 large-centered columns">
                 
-                <div id="products">                      
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example02.jpg" onmouseover="this.src='img/shop/example02-hover.jpg'" onmouseout="this.src='img/shop/example02.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example03.jpg" onmouseover="this.src='img/shop/example03-hover.jpg'" onmouseout="this.src='img/shop/example03.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example04.jpg" onmouseover="this.src='img/shop/example04-hover.jpg'" onmouseout="this.src='img/shop/example04.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example02.jpg" onmouseover="this.src='img/shop/example02-hover.jpg'" onmouseout="this.src='img/shop/example02.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example03.jpg" onmouseover="this.src='img/shop/example03-hover.jpg'" onmouseout="this.src='img/shop/example03.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example04.jpg" onmouseover="this.src='img/shop/example04-hover.jpg'" onmouseout="this.src='img/shop/example04.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example02.jpg" onmouseover="this.src='img/shop/example02-hover.jpg'" onmouseout="this.src='img/shop/example02.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example03.jpg" onmouseover="this.src='img/shop/example03-hover.jpg'" onmouseout="this.src='img/shop/example03.jpg'"><br>CONQUER $65</a></div>
-                      <div class="item text-center"><a href="shop-detail.php"><img src="img/shop/example04.jpg" onmouseover="this.src='img/shop/example04-hover.jpg'" onmouseout="this.src='img/shop/example04.jpg'"><br>CONQUER $65</a></div>
-                </div>
+                <ul class="small-block-grid-2 large-block-grid-4">
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example02.jpg" onmouseover="this.src='img/shop/example02-hover.jpg'" onmouseout="this.src='img/shop/example02.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example03.jpg" onmouseover="this.src='img/shop/example03-hover.jpg'" onmouseout="this.src='img/shop/example03.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example04.jpg" onmouseover="this.src='img/shop/example04-hover.jpg'" onmouseout="this.src='img/shop/example04.jpg'"><br>CONQUER $65</a></li>
+                  
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example02.jpg" onmouseover="this.src='img/shop/example02-hover.jpg'" onmouseout="this.src='img/shop/example02.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example03.jpg" onmouseover="this.src='img/shop/example03-hover.jpg'" onmouseout="this.src='img/shop/example03.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example04.jpg" onmouseover="this.src='img/shop/example04-hover.jpg'" onmouseout="this.src='img/shop/example04.jpg'"><br>CONQUER $65</a></li>
+                  
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example02.jpg" onmouseover="this.src='img/shop/example02-hover.jpg'" onmouseout="this.src='img/shop/example02.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example03.jpg" onmouseover="this.src='img/shop/example03-hover.jpg'" onmouseout="this.src='img/shop/example03.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example04.jpg" onmouseover="this.src='img/shop/example04-hover.jpg'" onmouseout="this.src='img/shop/example04.jpg'"><br>CONQUER $65</a></li>
+                  
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example01.jpg" onmouseover="this.src='img/shop/example01-hover.jpg'" onmouseout="this.src='img/shop/example01.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example02.jpg" onmouseover="this.src='img/shop/example02-hover.jpg'" onmouseout="this.src='img/shop/example02.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example03.jpg" onmouseover="this.src='img/shop/example03-hover.jpg'" onmouseout="this.src='img/shop/example03.jpg'"><br>CONQUER $65</a></li>
+                  <li class="text-center"><a href="shop-detail.php"><img src="img/shop/example04.jpg" onmouseover="this.src='img/shop/example04-hover.jpg'" onmouseout="this.src='img/shop/example04.jpg'"><br>CONQUER $65</a></li>
+                </ul>
         
         </div>
 	</div>
@@ -70,37 +75,11 @@ $flag = "shop"
   </script>
   
   <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
-  <script src="js/foundation.min.js"></script>
-  <script src="js/foundation/foundation.topbar.js"></script>
-  <script src="js/imagesloaded.pkgd.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>  
   
   <script>
   	$(document).foundation();
-	
-	/*** Masonry ***/
-	$(document).ready( function() {
-		var container = document.querySelector('#products');
-		var msnry;
-		// initialize Masonry after all images have loaded
-		imagesLoaded( container, function() {
-		  msnry = new Masonry( container, {
-			  // options
-			  itemSelector: '.item',
-			  "gutter": 0
-			  /*columnWidth: 270*/
-			});
-		});
-	});
-
-	/*var container = document.querySelector('#products');
-	var msnry = new Masonry( container, {
-	  // options
-	  columnWidth: 160,
-	  itemSelector: '.item'
-	});*/
-
   </script>
   
 </body>

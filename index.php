@@ -20,25 +20,8 @@ $flag = "home"
 
   <script src="js/vendor/custom.modernizr.js"></script>
   
-  <style type="text/css">
-  	@media only screen and (min-width: 941px) {
-  		.fancybox-wrap {
-		  	top: 20% !important; 
-		  	left: 2% !important; 
-		} 
-	}
-	
-	@media only screen and (min-width: 1290px) {
-  		.fancybox-wrap {
-		  	top: 20% !important; 
-		  	left: 12% !important; 
-		} 
-	}
-	
-  </style>
-
 </head>
-<body>
+<body id="home">
 	
   	
     <?php require_once('inc/header.php'); ?>
@@ -79,9 +62,9 @@ $flag = "home"
                     abc's <strong>SHARK TANK</strong>
                 </div>
   
-                <div class="row collapse show-for-mobile">
-                    <div class="small-6 columns">
-                        <img src="http://placehold.it/80x80">
+                <div class="row collapse show-for-mobile modal-row-border">
+                    <div class="small-6 columns modal-home-border">
+                        <img src="http://placehold.it/120x80">
                     </div>
                     <div class="small-6 columns text-center">
                         <span class="big-price">$50</span><br>
@@ -120,9 +103,8 @@ $flag = "home"
   </script>
   
   <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
-  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script>
-  <script src="js/foundation/foundation.interchange.js"></script>
   <script src="js/foundation/foundation.orbit.js"></script>
   <script src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
   <script src="js/jquery.flexisel.js"></script>

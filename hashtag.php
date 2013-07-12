@@ -18,49 +18,17 @@ $flag = "stellavalle"
   
   <script src="js/vendor/custom.modernizr.js"></script>
 
-</head>
-<body>
-	
-    <?php require_once('inc/header.php'); ?>
-	
-    <div class="row collapse our-story">
-          <div class="large-12 columns">
-              <h1>#STELLAVALLE Social</h1>
-          </div>
-    </div>
-    
-	<div class="row spacing-fix">
-        <div class="small-12 large-9 large-centered columns hashtag">
-				
-			 <div id="social-stream"></div>
-
-        </div>
-	</div>
-    
-
-	<?php require_once('inc/footer.php'); ?>
-    
-
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  
-  <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
-  <script src="js/foundation.min.js"></script>
-  <script src="js/foundation/foundation.topbar.js"></script> 
-  
-  	<link rel="stylesheet" type="text/css" href="css/dcsns_wall.css" media="all" />
-	<script type="text/javascript" src="js/jquery.social.stream.wall.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.social.stream.1.5.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/dcsns_wall.css" media="all" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.social.stream.wall.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.social.stream.1.5.2.min.js"></script>
 
   <script type="text/javascript">
-  $(document).ready(function($){
+  jQuery(document).ready(function($){
 	$('#social-stream').dcSocialStream({
 		feeds: {
 			twitter: {
-				id: 'stellavallenyc'
+				id: '/104592034,#stellavallenyc,stellavallenyc'
 			},
 			facebook: {
 				id: '113196925361707'
@@ -81,12 +49,44 @@ $flag = "stellavalle"
 		wall: true,
 		cache: false,
 		max: 'limit',
-		limit: 30,
+		limit: 20,
 		iconPath: 'images/dcsns-dark/',
 		imagePath: 'images/dcsns-dark/'
 	});
-});
+	});
   </script>
+
+</head>
+<body>
+	
+    <?php require_once('inc/header.php'); ?>
+	
+    <div class="row collapse our-story">
+          <div class="large-12 columns">
+              <h1>#STELLAVALLE Social</h1>
+          </div>
+    </div>
+    
+	<div class="row spacing-fix">
+        <div class="small-12 large-11 large-centered columns hashtag">
+				
+			 <div id="social-stream"></div>
+
+        </div>
+	</div>
+    
+
+	<?php require_once('inc/footer.php'); ?>
+    
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script> 
   
   <script>
   	$(document).foundation();
