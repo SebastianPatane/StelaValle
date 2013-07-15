@@ -64,36 +64,41 @@ $flag = "shop"
                 	
                     <!-- Only for Desktop -->
                 	<h1>PEACHY KEEN QUEEN NECKLACE WITH FRINGE</h1>
-					<h2>*PURSUIT OF NATURAL HAPPINESS COLLECTION</h2>
+				          <h2>*PURSUIT OF NATURAL HAPPINESS COLLECTION</h2>
                     <!-- /Only for Desktop -->
                     
                     <p>EFFORTLESS SHINE.<br>
                     14k Gold or Rhodium Plated<br>
-                    26” Box Chain with Clasp<br>
-                    Square Pendant is approximately 1.3” x 1.3”<br>
+                    26" Box Chain with Clasp<br>
+                    Square Pendant is approximately 1.3" x 1.3"<br>
                     Swarovski Crystal zigzag pattern</p>
                     
                     <span>$125</span>
                     
                 </div>
                 
+ 
+                
                 <form id="shop" class="custom">
                       <div class="row collapse">
+                       
+                        
+                        
                       	<div class="small-12 large-8 columns shop-forms-spacing">
                           <select class="medium choose">
                             <option selected>CHOOSE FINISH</option>
                             <option value="0">This is another option</option>
-                            <option value="0">This is another option too</option>
-                            <option value="0">Look, a third option</option>
+                            <option value="1">This is another option too</option>
+                            <option value="2">Look, a third option</option>
                           </select>
                       	</div>
                       	
                         <div class="small-12 large-4 columns">
                           <select class="medium quantity">
                             <option selected>Qty.</option>
-                            <option value="0">1</option>
-                            <option value="0">2</option>
-                            <option value="0">3</option>
+                            <option value="3">1</option>
+                            <option value="4">2</option>
+                            <option value="5">3</option>
                           </select>
                       	</div>
                       </div>
@@ -143,8 +148,8 @@ $flag = "shop"
   <script src="js/foundation/foundation.forms.js"></script>
   
   <script>
-  	$(document).foundation();
-	
+    
+	$(document).foundation();
 	$(document).ready(function () {
             $("#images-shop-thumbails img").click(function () {
                 var changeSrc = $(this).attr("src");

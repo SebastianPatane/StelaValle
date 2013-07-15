@@ -11,7 +11,7 @@
         </div>
         
       	<div class="small-12 large-5 columns">
-            	<a href="#" class="shopping-cart view-cart">View Cart</a>  <span class="show-for-dektop-only header-line-div">|</span>  <a href="#" class="shopping-cart">Customer Service</a> 
+            	<a href="#" class="shopping-cart view-cart">View Cart</a>  <a href="#" class="shopping-cart">Customer Service</a> 
         </div>
     </div>
 	<!-- /Shopping Cart -->

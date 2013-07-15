@@ -304,17 +304,17 @@
 .dcsns-toolbar .filter .link-all {
 	color: #fff;
 	/*height: 21px;*/
-	padding: 7px 7px 4px 7px;
+	padding: 6px 8px 4px 8px;
 	text-shadow: 0 0 1px #555;
 	font-weight: bold;
 }
 .dcsns-toolbar .filter li a {
-	padding: 4px 3px 0 3px;
+	padding: 4px;
 	margin: 0 1px 1px 0;
 	display: block;
 	float: left;
 	background: #777;
-	height: 28px;
+	/*height: 28px;*/
 }
 .dcsns-toolbar .filter li img {
 	margin: 0;
