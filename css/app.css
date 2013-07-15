@@ -76,12 +76,14 @@ ol.orbit-bullets { display: table; text-align: center;}
 }
 
 .social-footer .button {
-	border-color:#333;
+	border-color:#000;
 	height:1.9em;
 	background:url(../img/button-go.gif) center center no-repeat #000;
 	width:29px;
 	height:27px;
 	float:left;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 ul.social-links {
@@ -402,7 +404,7 @@ ul.lookbook-responsive li {
 	
 .product-description p {
 	font-family: 'Lato', sans-serif;
-	font-size:14px;
+	font-size:13px;
 	color:#000;
 	line-height:1.6em;
 	margin-bottom:0px;}
@@ -442,6 +444,8 @@ ul#images-shop-thumbails li img {
 	padding:15px 0px 15px 0px;
 	font-size:14px;
 	margin-bottom:20px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 form.custom .custom.dropdown {
@@ -470,14 +474,21 @@ form.custom .custom.dropdown.open.medium ul {
 	min-width:100%;	
 }
 
+.shop-detail form.custom strong {
+	display: block;
+	margin-bottom: 10px;
+}
+
 a.read-reviews {
 	border:1px solid #000;
-	display:block;
+	/*display:block;*/
 	padding:6px 0px 6px 0px;
 	text-align:center;
 	font-style:italic;
 	font-size:14px;
-	margin-right:10px;
+	/*margin-right:10px;*/
+	width: 58%;
+	float: left;
 }
 
 a.read-reviews:hover {
@@ -799,6 +810,10 @@ ul#images-shop-thumbails li img {
 		  margin-top:10px;
 		  padding:0px;
 	  }
+	  
+	  #collections-menu.dropdown li:nth-child(2) {
+		  margin-top:0px;
+	  }
       .top-bar-section .dropdown li a {
         color: #000;
         line-height: 1em !important;
@@ -823,8 +838,12 @@ ul#images-shop-thumbails li img {
 	opacity:1.0;
 }
 
-.top-bar-section li.desktop-logo a:hover {
+.top-bar-section li.desktop-logo a {
 	background-color:transparent;
+}
+
+.top-bar-section ul li .js-generated {
+	display: none;
 }
 
 .slideshow-wrapper {
@@ -1134,7 +1153,7 @@ ul.exposureThumbs li {
 }
 .product-description h1 {
 	font-family: 'GFS Didot', serif;
-	font-size:22px;
+	font-size:20px;
 	color:#000;
 	font-weight:700;
 	margin:0px;
@@ -1155,7 +1174,7 @@ ul.exposureThumbs li {
 	margin:20px 0px 20px 0px;}
 	
 .shop-detail form.custom {
-	width:55%;
+	width:70%;
 }
 
 
@@ -1321,6 +1340,10 @@ and (max-width : 1920px) {
 	font-size:12px; 
 }
 
+.shop-detail form.custom {
+	width:55%;
+}
+
 }
 
 @media only screen and (min-width : 1200px) {
@@ -1378,4 +1401,47 @@ h1.our-collections-h1 {
 	#home .fancybox-inner {
 		width:auto !important;
 	}
+}
+
+
+/* feeds network specific styles 
+.dcsns-toolbar .filter li a {
+	background:none;
+}*/
+
+.dcsns-toolbar .filter li.f-twitter a {
+	background-color: #4ec2dc;
+}
+.dcsns-toolbar .filter li.f-twitter a:hover {
+	background-color: #777;
+}
+.dcsns-toolbar .filter li.f-facebook a {
+	background-color: #3b5998;
+}
+.dcsns-toolbar .filter li.f-facebook a:hover {
+	background-color: #777;
+}
+.dcsns-toolbar .filter li.f-pinterest a {
+	background-color: #CB2528;
+}
+.dcsns-toolbar .filter li.f-pinterest a:hover {
+	background-color: #777;
+}
+.dcsns-toolbar .filter li.f-vimeo a {
+	background-color: #4EBAFF;
+}
+.dcsns-toolbar .filter li.f-vimeo a:hover {
+	background-color: #777;
+}
+
+.iso-active {
+	background-color: #000 !important;
+}
+
+/* Centra los Social Icons en la pantalla */
+#dcsns-filter {
+    width: 159px;
+    margin: 0 auto;
+    height: 30px;
+    margin-top: 20px;
 }

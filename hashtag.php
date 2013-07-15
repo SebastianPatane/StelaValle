@@ -14,11 +14,13 @@ $flag = "stellavalle"
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=GFS+Didot" type="text/css">
-  <link rel="stylesheet" href="css/app.css" />
   
   <script src="js/vendor/custom.modernizr.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/dcsns_wall.css" media="all" />
+
+  <link rel="stylesheet" href="css/app.css" />
+  
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.social.stream.wall.1.3.js"></script>
   <script type="text/javascript" src="js/jquery.social.stream.1.5.2.min.js"></script>

@@ -103,21 +103,21 @@ $flag = "shop"
                       <div class="row collapse">
                       	  
                           <div class="large-12 columns">
-                          		<p><strong><em>Review it, Love it, Share it!</em></strong></p>
+                          		<strong><em>Review it, Love it, Share it!</em></strong>
                           </div>
                       	  	
-                          <div class="small-6 large-6 columns">	
+                          <div class="large-12 columns">	
                               <a href="#" class="read-reviews">Read Reviews</a>
-                          </div>
-                          
-                          <div class="small-6 large-6 columns">
+
                           		<ul class="social-links">
                                   <li><a href="#" class="facebook">Facebook</a></li>
                                   <li><a href="#" class="instagram">Instagram</a></li>
                                   <li><a href="#" class="pinterest">Pinterest</a></li>
                                   <li><a href="#" class="twitter">Twitter</a></li>
                               	</ul>
+
                           </div>
+
                       </div>
                 </form>
 

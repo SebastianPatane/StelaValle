@@ -38,7 +38,7 @@
 				      <li><a href="our-story.php" <?php if ($flag == "our-story"): echo 'class="current-section"'; endif; ?>>OUR STORY</a></li>
                       <li class="divider"></li>
 				      <li class="has-dropdown"><a href="collections.php" <?php if ($flag == "collections"): echo 'class="current-section"'; endif; ?>>COLLECTIONS</a>
-				        <ul class="dropdown">
+				        <ul class="dropdown" id="collections-menu">
 				          <li><a href="collections.php">STELLA VALLE STRONG</a></li>
                           <li class="divider"></li>
 				          <li><a href="collections.php">CELEBRATE SEASIDE</a></li>
