@@ -30,11 +30,11 @@ $flag = "our-story"
           </div>
     </div>
     
-	<div class="row">
+	<div class="row ">
 		<div class="large-12 columns our-story">
 				
                 <!-- Only for Mobile device -->
-                <div class="row collapse show-for-mobile">
+                <div class="row collapse show-for-small">
                 	<div class="large-6 columns">
                         <img src="img/img-our-story.jpg" alt="OUR STORY" class="our-story-image"> 
                     </div>
@@ -47,9 +47,9 @@ $flag = "our-story"
               
                 
                 <!-- Only for Desktop device -->
-                <div class="row show-for-dektop-only">
-                	<div class="large-4 columns">
-        				<h2><span>MEET</span><br>ASHLEY & PAIGE</h2>
+                <div class="row show-for-medium-up ">
+                	<div class="large-4  columns">
+        				      <h2><span>MEET</span><br>ASHLEY & PAIGE</h2>
                 	</div>
                     <div class="large-8 columns">
                 		<h3>ARMY PAST, FASHION PRESENT</h3>
@@ -57,21 +57,26 @@ $flag = "our-story"
                 </div>
                 <!-- /Only for Desktop device -->
                 
+                <div class="row ">
+                  <div class="large-4 columns text-center hide-for-small hide-for-medium-down ">
                 
-                <img src="img/img-our-story.jpg" alt="OUR STORY" class="video-desktop show-for-dektop-only"> 
+                      <img src="img/img-our-story.jpg" alt="OUR STORY" class="video-desktop"> 
+                  </div>
                 
-                <p>The designers, sisters Ashley Jung and Paige Dellavalle, knew their experience as West Point military cadets and U.S. Army Officers didn’t make them the most obvious choices as chic arbiters of style. While they donned the drab, olive, camouflage fatigues that came with military life, their vision for life after the military remained lucid.</p>
-
-                <p>Founded in 2009, stella valle reflects the designers’ pursuit to live out their lifelong aspirations in fashion and design despite their unique past. Capitalizing on their military background, they fused their mechanical training with a strong, diverse aesthetic sense — And with the desire to create a brand that represented their innate sense of style and unique background – came stella valle.</p>
-                
-                <p>Just like the designers, the line perfectly marries masculine and feminine characteristics. The strong lines and geometric metalwork represent their strength and military past. These masculine design elements are balanced by feminine details and dainty crystals to portray their inherent femininity and fashion future.
-                
-                <p>The collection was inspired by and designed for strong, creative women, who chart their own path, lead their own lives, and create their own history. The brand encourages women to express themselves by reflecting who they are and what they want from life. stella valle stands for seizing opportunities, taking risks, setting the bar high, persisting through obstacles and striving for excellence.</p>
-                
-                <p>Like the designers themselves, stella valle brings to life a wicked mélange of edge and elegance all at once — embracing a juxtaposition that connotes an unapologetic, liberated sense of one’s own purpose and style.</p>
-
+                <div class="large-8  small-12 columns">
+                  <p>The designers, sisters Ashley Jung and Paige Dellavalle, knew their experience as West Point military cadets and U.S. Army Officers didn’t make them the most obvious choices as chic arbiters of style. While they donned the drab, olive, camouflage fatigues that came with military life, their vision for life after the military remained lucid.</p>
+  
+                  <p>Founded in 2009, stella valle reflects the designers’ pursuit to live out their lifelong aspirations in fashion and design despite their unique past. Capitalizing on their military background, they fused their mechanical training with a strong, diverse aesthetic sense — And with the desire to create a brand that represented their innate sense of style and unique background – came stella valle.</p>
+                  
+                  <p>Just like the designers, the line perfectly marries masculine and feminine characteristics. The strong lines and geometric metalwork represent their strength and military past. These masculine design elements are balanced by feminine details and dainty crystals to portray their inherent femininity and fashion future.
+                  
+                  <p>The collection was inspired by and designed for strong, creative women, who chart their own path, lead their own lives, and create their own history. The brand encourages women to express themselves by reflecting who they are and what they want from life. stella valle stands for seizing opportunities, taking risks, setting the bar high, persisting through obstacles and striving for excellence.</p>
+                  
+                  <p>Like the designers themselves, stella valle brings to life a wicked mélange of edge and elegance all at once — embracing a juxtaposition that connotes an unapologetic, liberated sense of one’s own purpose and style.</p>
+                </div>
         
         </div>
+	</div>
 	</div>
 
 	

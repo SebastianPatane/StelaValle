@@ -6,12 +6,13 @@
 
   	<!-- Shopping Cart -->
 	<div class="row">
-   	  	<div class="small-12 large-7 columns free-shipping">
+   	  	<!-- div class="small-12 large-7 columns free-shipping">
         		<strong><i>Free Shipping on orders over $100</i></strong>
-        </div>
+        </div -->
         
-      	<div class="small-12 large-5 columns">
-            	<a href="#" class="shopping-cart view-cart">View Cart</a>  <a href="#" class="shopping-cart">Customer Service</a> 
+      	<div class="small-12 large-12 columns hide">
+            	<a href="#" class="shopping-cart view-cart">View Cart</a>  
+            	<!-- a href="#" class="shopping-cart">Customer Service</a --> 
         </div>
     </div>
 	<!-- /Shopping Cart -->
