@@ -1,8 +1,16 @@
 body {
 	font-family: 'Lato', sans-serif;
-	text-rendering: optimizeLegibility;
+	
 	color:#000000;
-	margin: 0px 0px 60px 0px
+  
+}
+
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 768px) {
+
+  body {
+      margin: 0px 0px 60px 0px
+  }
 }
 
 a {
@@ -69,14 +77,18 @@ ol.orbit-bullets { display: table; text-align: center;}
   
 }
 
-.show-for-mobile.social-footer {
- padding: 10px;
- margin: 10px 0;
+  .show-for-mobile.social-footer {
+   padding: 10px;
+   margin: 10px 0;
+    
+  }
   
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 768px) {
+
 }
 
 .footer-newsletter {
-	/*margin-right:10px;*/
 	display: inline-block;
 }
 
@@ -118,15 +130,16 @@ ul.social-links li {
 	height:27px;
 	float:left;
 	margin:0px 1px 0px 0px;
-	margin-left: 5px;
+	margin-left: 4px;
 }
 
 ul.social-links li a {
 	width:27px;
 	height:27px;
-	display:block;
+	display:inline-block;
 	background:url(../img/ico-social.gif) 0px 0px no-repeat;
-	text-indent: 5000px;
+	text-indent: -3000px;
+	color: transparent;
 
 }
 
@@ -186,6 +199,7 @@ ul.social-links li a.vimeo:hover {
 	color:#000000;
 	text-decoration:underline;
 }
+
 
 /****** Home Popup *************/
 .home-modal {
@@ -651,117 +665,138 @@ a.read-reviews:hover {
 /* Styles for screens that are atleast 768px; */
 @media only screen and (min-width: 768px) {
   
+  .free-shipping {
+  	border-bottom:none;
+  	border-right:1px solid #000;
+  }
+  
+  .home-modal .featured-title {
+  	border-bottom:none;
+  	border-right:1px solid #ccc;
+  }
+  
+  /********** OUR STORY ************/
+  .our-story h1 {
+  	border-bottom:1px solid #000;
+  	
+  }
+  
+  .our-story h2 {
+  	font-size:28px;
+  	line-height:1em;
+  	margin-top:80px;
+  	text-align:center;
+  }
+  
+  .our-story h2 span {
+  	font-size:80px;
+  	display:block;
+  	/*margin-bottom:20px;*/
+  }
+  
+  .our-story h3 {
+  	font-size:24px;
+  	text-align:center;
+  	margin-top:90px;
+  }
+  
+  .our-story-image {
+  	margin-bottom:20px;
+  }
+  
+  .our-collections {
+  	border:none;
+  }
+  
+  .our-collection-title {
+  	border-bottom:1px solid #000;
+  	padding-bottom:0px;
+  	margin-bottom:20px !important;
+  }
+  
+  .our-collections h1 {
+  	text-align:left;
+  	line-height:2em;
+  }
+  
+  a.view-look-book {
+  	margin:0px;
+  	float:right;
+  }
+  
+  .row.collapse.look-book {
+  	border-bottom:1px solid #000;
+  	margin-bottom:20px;
+  }
+  
+  /************* OUR SHOP ************/
+  ul#images-shop-detail.exposureThumbs li {
+  	margin:0px 0px 10px 20px;
+  }
+  
+  
+  ul#images-shop-thumbails  {
+  	margin:0px;
+  	padding:0px;
+  }
+  
+  ul#images-shop-thumbails li {
+  	margin:0px 3px 10px 10px;
+  	float:none;
+  	height:75px;
+  }
+  
+  ul#images-shop-thumbails li img {
+  	cursor:pointer;
+  	margin:0px;
+  	width:75px;
+  	height:75px;
+  }
+  
+  /******** BLOG *****************/
+  
+  .blog .blog-image {
+  	border:none;
+  }
+  
+  /******** STOCKIST *****************/
+  
+  .stockist-columns {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+  
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+  
+    column-count: 2;
+    column-gap: 20px;
+   }
+
+}
+
+@media only screen and (min-width: 940px) {
+  .desktop-footer.footer-links a {
+    font-size: 10px;
+    padding: 0px 9px 0px 0px;
+    line-height: 40px;
+  }
+  
+}
+  
+@media only screen and (min-width: 1060px) {
+  .desktop-footer.footer-links a {
+    font-size: 11px;
+    padding: 0px 13px 0px 0px;
+    line-height: 40px;
+  }
+}
   
 
-
-  
-
-.free-shipping {
-	border-bottom:none;
-	border-right:1px solid #000;
-}
-
-.home-modal .featured-title {
-	border-bottom:none;
-	border-right:1px solid #ccc;
-}
-
-/********** OUR STORY ************/
-.our-story h1 {
-	border-bottom:1px solid #000;
-	
-}
-
-.our-story h2 {
-	font-size:28px;
-	line-height:1em;
-	margin-top:80px;
-	text-align:center;
-}
-
-.our-story h2 span {
-	font-size:80px;
-	display:block;
-	/*margin-bottom:20px;*/
-}
-
-.our-story h3 {
-	font-size:24px;
-	text-align:center;
-}
-
-.our-story-image {
-	margin-bottom:20px;
-}
-
-.our-collections {
-	border:none;
-}
-
-.our-collection-title {
-	border-bottom:1px solid #000;
-	padding-bottom:0px;
-	margin-bottom:20px !important;
-}
-
-.our-collections h1 {
-	text-align:left;
-	line-height:2em;
-}
-
-a.view-look-book {
-	margin:0px;
-	float:right;
-}
-
-.row.collapse.look-book {
-	border-bottom:1px solid #000;
-	margin-bottom:20px;
-}
-
-/************* OUR SHOP ************/
-ul#images-shop-detail.exposureThumbs li {
-	margin:0px 0px 10px 20px;
-}
-
-
-ul#images-shop-thumbails  {
-	margin:0px;
-	padding:0px;
-}
-
-ul#images-shop-thumbails li {
-	margin:0px 3px 10px 10px;
-	float:none;
-	height:75px;
-}
-
-ul#images-shop-thumbails li img {
-	cursor:pointer;
-	margin:0px;
-	width:75px;
-	height:75px;
-}
-
-/******** BLOG *****************/
-
-.blog .blog-image {
-	border:none;
-}
-
-/******** STOCKIST *****************/
-
-.stockist-columns {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 20px;
-
-  -moz-column-count: 2;
-  -moz-column-gap: 20px;
-
-  column-count: 2;
-  column-gap: 20px;
- }
-
+@media only screen and (min-width: 1240px) {
+  .desktop-footer.footer-links a  {
+    font-size: 12px;
+    padding: 0px 20px 0px 0px;
+  }
 }
 
 
@@ -863,7 +898,7 @@ ul#images-shop-thumbails li img {
           width: 0;
           height: 0;
           border: none;
-          border-color:none;
+          border-color: transparent;
           border-top-style: none;
           margin-top: -2.5px;
           top: 22.5px; }
@@ -946,26 +981,7 @@ ul#images-shop-thumbails li img {
     margin-top: 3px;
   }
   
-  .desktop-footer.footer-links a {
-  	font-size: 10px;
-    padding: 0px 9px 0px 0px;
-    line-height: 40px;
-  }
-  @media only screen and (min-width: 1060px) {
-    .desktop-footer.footer-links a {
-      font-size:11px;
-      padding:0px 13px 0px 0px;
-      line-height: 40px;
-    }
-  }
-    
   
-  @media only screen and (min-width: 1240px) {
-    .desktop-footer.footer-links a  {
-      font-size: 12px;
-      padding: 0px 20px 0px 0px;
-    }
-  }
   
   
   .desktop-footer a:hover {

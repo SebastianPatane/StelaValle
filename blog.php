@@ -14,6 +14,7 @@ $flag = "stellavalle"
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=GFS+Didot" type="text/css">
+  
   <link rel="stylesheet" href="css/app.css" />
   
   <script src="js/vendor/custom.modernizr.js"></script>

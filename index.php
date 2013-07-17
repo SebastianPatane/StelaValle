@@ -14,9 +14,11 @@ $flag = "home"
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=GFS+Didot" type="text/css">
-  <link rel="stylesheet" href="css/app.css" />
+
   <link rel="stylesheet" href="css/carousel.css" />
   <link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+  
+    <link rel="stylesheet" href="css/app.css" />
 
   <script src="js/vendor/custom.modernizr.js"></script>
   
