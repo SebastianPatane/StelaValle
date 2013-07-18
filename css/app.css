@@ -1397,9 +1397,10 @@ and (min-width : 768px)  {
   }
  
 }
-/* Styles for screens that are betwen 940px and 1920px */
+/* Styles for screens that are bigger than 940px */
 @media only screen 
-and (min-width : 940px)  {
+and (min-width : 940px) 
+and (max-width : 1920px) {
   .show-for-dektop-only {
   	display:block;	
   }
