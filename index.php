@@ -33,7 +33,7 @@ $flag = "home"
 			
             <div class="slideshow-wrapper">
   				<div class="preloader"></div>
-                    <ul data-orbit>
+                    <ul data-orbit data-options="variable_height: true;">
                           <li><a href="#" ><img src="img/home_gallery/large/img-home-example.jpg" data-interchange="[img/home_gallery/small/img-home-example.jpg, (default)], [img/home_gallery/medium/img-home-example.jpg, (small)], [img/home_gallery/large/img-home-example.jpg, (medium)]"></a></li>
                           <li><a href="#" ><img src="img/home_gallery/large/img-home-example.jpg" data-interchange="[img/home_gallery/small/img-home-example.jpg, (default)], [img/home_gallery/medium/img-home-example.jpg, (small)], [img/home_gallery/large/img-home-example.jpg, (medium)]"></a></li>
                           <li><a href="#" ><img src="img/home_gallery/large/img-home-example.jpg" data-interchange="[img/home_gallery/small/img-home-example.jpg, (default)], [img/home_gallery/medium/img-home-example.jpg, (small)], [img/home_gallery/large/img-home-example.jpg, (medium)]"></a></li>
@@ -140,6 +140,7 @@ $flag = "home"
         }
     });
 	});
+	
 				
   </script>
 </body>

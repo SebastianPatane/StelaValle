@@ -11,6 +11,8 @@ body {
   body {
       margin: 0px 0px 60px 0px
   }
+
+
 }
 
 a {
@@ -992,6 +994,13 @@ a.read-reviews:hover {
   	top: 15em;
   }
   
+  .orbit-bullets {  
+  top: 24%;
+position: fixed;
+z-index: 9900;
+
+}
+
   .orbit-bullets li {
   	cursor:pointer;	
   }
