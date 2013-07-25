@@ -2610,9 +2610,9 @@ form.custom {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #000000; }
+  background: #000; }
   .contain-to-grid .top-bar {
-    margin-bottom: 0; }
+    margin-bottom: 1.875em; }
 
 .fixed {
   width: 100%;
@@ -2626,8 +2626,8 @@ form.custom {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #000000;
-  /*margin-bottom: 1.875em;*/}
+  background: #000;
+  margin-bottom: 1.875em; }
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; }
@@ -2648,7 +2648,7 @@ form.custom {
   .top-bar .name {
     height: 45px;
     margin: 0;
-    font-size: 16px; }
+    font-size: 16; }
     .top-bar .name h1 {
       line-height: 45px;
       font-size: 1.0625em;
@@ -2697,7 +2697,7 @@ form.custom {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #000000; }
+      background: #000; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a span {
@@ -2716,7 +2716,7 @@ form.custom {
     height: auto;
     display: block;
     background: #222222;
-    font-size: 16px;
+    font-size: 16;
     margin: 0; }
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
@@ -2734,9 +2734,6 @@ form.custom {
     font-size: 0.8125em;
     font-weight: bold;
     background: #222222; }
-    .top-bar-section ul li > a.hover {
-      background: #090909;
-      color: white; }
     .top-bar-section ul li > a.button {
       background: #2ba6cb;
       font-size: 0.8125em; }
@@ -2754,6 +2751,9 @@ form.custom {
       background: #c60f13; }
       .top-bar-section ul li > a.button.alert.hover {
         background: #970b0e; }
+  .top-bar-section ul li.hover > a {
+    background: #090909;
+    color: white; }
   .top-bar-section ul li.active > a {
     background: #090909;
     color: white; }
@@ -2790,6 +2790,8 @@ form.custom {
       .top-bar-section .dropdown li a {
         font-weight: normal;
         padding: 8px 15px; }
+        .top-bar-section .dropdown li a.parent-link {
+          font-weight: bold; }
       .top-bar-section .dropdown li.title h5 {
         margin-bottom: 0; }
         .top-bar-section .dropdown li.title h5 a {
@@ -2839,8 +2841,9 @@ form.custom {
       background: #111111; }
 
   .contain-to-grid .top-bar {
-    max-width: 80em;
-    margin: 0 auto; }
+    max-width: 62.5em;
+    margin: 0 auto;
+    margin-bottom: 1.875em; }
 
   .top-bar-section {
     -webkit-transition: none 0 0;
@@ -2877,7 +2880,7 @@ form.custom {
       position: relative; }
       .top-bar-section .has-dropdown.moved > .dropdown {
         visibility: hidden; }
-    .top-bar-section .has-dropdown.hover > .dropdown {
+    .top-bar-section .has-dropdown.hover > .dropdown, .top-bar-section .has-dropdown.not-click:hover > .dropdown {
       visibility: visible; }
     .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
       border: none;
